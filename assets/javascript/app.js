@@ -50,17 +50,6 @@ var config = {
     var destination = childSnapshot.val().destinationBase;
     var firstTrainTime = childSnapshot.val().firstTrainTimeBase;
     var frequency = childSnapshot.val().frequencyBase;
-  
-    // var formatFirstTrainTime = moment.unix(firstTrainTime).format("HH:mm");
-    // console.log(formatFirstTrainTime);
-  
-  //   var unformatNextArrival = moment().diff(moment.unix(firstTrainTime, "X"), "minutes");
-  //   console.log(unformatNextArrival);
-  //   console.log(moment.unix(unformatNextArrival).format("HH:mm"));
-  
-  //   var formatTimeLeft
-    // var timeSinceFirst = moment().subtract(firstTrainTime, "minutes").format("HH:mm");
-    // console.log("Next Arrival: "+timeSinceFirst);
     var minusYearFirstTrainTime = moment.unix(firstTrainTime, "hh:mm").subtract(1, "years");
     var timeNow = moment();
     var timeDifference = moment().diff(moment(minusYearFirstTrainTime), "minutes");
