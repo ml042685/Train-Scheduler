@@ -24,3 +24,8 @@ We'll leave that up to you -- however you like. Just make sure you're using Fire
 * Users from many different machines must be able to view same train times.
 
 * Styling and theme are completely up to you. Get Creative!
+
+
+#### Click link for Train Scheduler app
+
+https://ml042685.github.io/Train-Scheduler/
